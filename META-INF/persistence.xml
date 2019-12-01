@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  
+  <persistence-unit name="compositeUnit" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <properties>
+      <property name="eclipselink.composite-unit" value="true"/>
+    </properties>
+  </persistence-unit>
+
+    <persistence-unit name="BDDRom" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <properties>
+      <property name="eclipselink.composite-unit.member" value="true"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/BDDRomantic"/>  
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.user" value="1q2w3e"/>
+    </properties>
+
+  </persistence-unit>
+  <persistence-unit name="BDDLit" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <properties>
+      <property name="eclipselink.composite-unit.member" value="true"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/BDDLiteratura"/>  
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.user" value="1q2w3e"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="BDDMit" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <properties>
+      <property name="eclipselink.composite-unit.member" value="true"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/BDDMitologie"/>  
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.user" value="1q2w3e"/>
+    </properties>
+  </persistence-unit>
+</persistence>
