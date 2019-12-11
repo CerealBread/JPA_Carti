@@ -39,13 +39,15 @@ public class MythologyBook{
 		// preia numarul de coloane
 		int numCols = rsMetaData.getColumnCount();
 		// afiseaza antetele coloanelor
-		String header = "";
-		for (i = 1; i <= numCols; i++) {
-			if (i > 1)
-				header = header + ",";
-			header = header + rsMetaData.getColumnLabel(i);
-		}
-		System.out.println(header);
+//		String header = "";
+//		for (i = 1; i <= numCols; i++) {
+//			if (i > 1)
+//				header = header + ",";
+//			header = header + rsMetaData.getColumnLabel(i);
+//		}
+//		System.out.println(header);
+		
+		System.out.println('\n' + "------ The Mythology Books: ------");
 		// afiseaza toate datele din tabel
 		boolean more = resultSet.next();
 		while (more) {

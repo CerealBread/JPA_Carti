@@ -63,11 +63,11 @@ public class Main {
 	}
 
 	static void displayAllBooks() throws SQLException {
-		System.out.println('\n' + "------ The romantic Books: ------");
+//		System.out.println('\n' + "------ The romantic Books: ------");
 		RomanticBook.selectBooks();
-		System.out.println('\n' + "------ The Mythology Books: ------");
+//		System.out.println('\n' + "------ The Mythology Books: ------");
 		MythologyBook.selectBooks();
-		System.out.println('\n' + "------ The Literature Books: ------");
+//		System.out.println('\n' + "------ The Literature Books: ------");
 		LiteratureBook.selectBooks();
 	}
 
